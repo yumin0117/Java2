@@ -15,6 +15,7 @@ public class ArrayTest01 {
             numArr[i] = s1.nextInt();
 //            sum 변수에 numArr[0] ~ [4]의 합계
             sum += numArr[i];
+            System.out.println(sum);
         }
 
 //        1 + 3 + .. + 10 = 20 예시처럼 출력되도록 반복문
