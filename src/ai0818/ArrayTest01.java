@@ -17,6 +17,16 @@ public class ArrayTest01 {
             sum += numArr[i];
         }
 
+//        1 + 3 + .. + 10 = 20 예시처럼 출력되도록 반복문
+        for (int i = 0; i < numArr.length; i++){
+            if(i < 4){
+                System.out.print(numArr[i] + " + ");
+            }else {
+                System.out.print(numArr[i] + " = ");
+                System.out.print(sum);
+            }
+        }
+
         s1.close();
     }
 }
