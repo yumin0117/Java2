@@ -10,8 +10,7 @@ public class ArrayTest02 {
             if(i < arr1.length-1){
                 System.out.print(arr1[i] + " + ");
             }else {
-                System.out.print(arr1[i] + " = ");
-                System.out.print(sum);
+                System.out.print(arr1[i] + " = " + sum);
             }
         }
     }
