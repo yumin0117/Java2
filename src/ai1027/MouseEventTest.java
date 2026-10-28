@@ -31,8 +31,23 @@ public class MouseEventTest extends JFrame {
 
         @Override
         public void mousePressed(MouseEvent e) {
-            System.out.println("버튼에 마우스가 눌러짐");
-            lbl.setText("버튼에 마우스가 눌러짐");
+            int eBtnNum = e.getButton();
+            String msg = "";
+            switch (eBtnNum){
+                case 1:
+                    msg = "왼쪽";
+                    break;
+                case 2:
+                    msg = "가운데";
+                    break;
+                case 3:
+                    msg = "오른쪽";
+                    break;
+            }
+
+            JOptionPane.showMessageDialog(null, msg + "버튼 눌러짐");
+            System.out.println("버튼에 마우스가 해제됨");
+            lbl.setText("버튼에 마우스가 해제됨");
         }
 
         @Override
